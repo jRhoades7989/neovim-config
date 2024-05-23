@@ -89,6 +89,16 @@ _G.packer_plugins = {
     path = "/home/mimsyboro/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["comment.nvim"] = {
+    loaded = true,
+    path = "/home/mimsyboro/.local/share/nvim/site/pack/packer/start/comment.nvim",
+    url = "https://github.com/numtostr/comment.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/mimsyboro/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/mimsyboro/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -148,6 +158,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mimsyboro/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-sleuth"] = {
+    loaded = true,
+    path = "/home/mimsyboro/.local/share/nvim/site/pack/packer/start/vim-sleuth",
+    url = "https://github.com/tpope/vim-sleuth"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/home/mimsyboro/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 

@@ -1,13 +1,11 @@
 require("mimsybor.remap")
+require("mimsybor.options")
+require("mimsybor.autocmd")
 
 vim.wo.number = true
 vim.wo.relativenumber = true
 
-
---vim.opt.autoindent = true
-vim.opt.expandtab = true
-vim.opt.autoindent = true
-vim.opt.smartindent = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+vim.g.mapleader = " "
+vim.g.maplocalleader = ' '
+vim.g.have_nerd_font = true
 

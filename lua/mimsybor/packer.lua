@@ -52,6 +52,11 @@ return require('packer').startup(function(use)
     use 'lewis6991/gitsigns.nvim'
 
     --Shows pending keybinds
-    use 'folke/which-key.nvim'
+    --use 'folke/which-key.nvim'
+
+    --Cool icons
+    use {'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font }
+    use 'echasnovski/mini.nvim'
 end)
+
 

@@ -12,7 +12,7 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = {"lua_ls", "omnisharp", "jdtls", "emmet_language_server"},
+    ensure_installed = {"lua_ls", "omnisharp", "jdtls", "emmet_language_server", "asm_lsp"},
     handlers = {
         function(server_name)
             lsp_config[server_name].setup({

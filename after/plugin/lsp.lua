@@ -12,7 +12,7 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = {"lua_ls", "omnisharp", "jdtls", "emmet_language_server", "asm_lsp"},
+    ensure_installed = {"lua_ls", "omnisharp", "jdtls", "emmet_language_server", "asm_lsp", "eslint", "tsserver"},
     handlers = {
         function(server_name)
             lsp_config[server_name].setup({
@@ -35,6 +35,16 @@ require('mason-lspconfig').setup({
                 filetypes = {"css", "html", "javascript", "javascriptreact", "sass", "scss", "typescriptreact"}
             })
         end,
+        ["eslint"] = function()
+            lsp_config.eslint.setup({
+                on_attach = function (client, bufnr)
+                    vim.api.nvim_create_autocmd("BufWritePre", {
+                        buffer = bufnr,
+                        command = "EslintFixAll"
+                    })
+                end
+            })
+        end
     },
 })
 --  This function gets run when an LSP attaches to a particular buffer.
